@@ -1,4 +1,4 @@
-package hw6;
+package com.hw6;
 
 import java.lang.reflect.Constructor;
 
@@ -11,9 +11,8 @@ public class VetClinic {
                 new Horse("трава", "в стайне")
         };
 
-        Class<?> veterinarianClazz = Class.forName("com.pb.hw6.Veterinarian");
-        Constructor<?> veterinarianConstructor;
-        veterinarianConstructor = veterinarianClazz.getConstructor();
+        Class<?> veterinarianClazz = Class.forName("com.hw6.Veterinarian");
+        Constructor<?> veterinarianConstructor = veterinarianClazz.getConstructor();
         Object veterinarianObj = veterinarianConstructor.newInstance();
 
         for (Animal animal: animals) {
