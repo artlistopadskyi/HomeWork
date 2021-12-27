@@ -3,7 +3,7 @@ package hw13;
 import java.util.List;
 
 public class Consumer implements Runnable {
-    List<Integer> numbers;
+    final List<Integer> numbers;
 
     public Consumer(List<Integer> numbers) {
         this.numbers = numbers;
